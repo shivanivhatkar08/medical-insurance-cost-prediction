@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 
 #Loading the dataset
 
-med_ds = pd.read_csv(r"C:\Users\tvhat\OneDrive\Desktop\VS CODE\Python\Medical Insurance\medical_insurance.csv")
+med_ds = pd.read_csv(r"\Python\Medical Insurance\medical_insurance.csv")
 print(med_ds.head())
 
 print(med_ds.info()) # this dataset has 2772 entries and 7 columns which are age, sex, bmi, children, smoker, region, charges
@@ -63,7 +63,7 @@ med_ds = pd.get_dummies(med_ds, columns=['region'], drop_first=True)
 #med_ds = med_ds.drop_duplicates()
 #print("New dataset after removing duplicates:", med_ds.shape)
 
-med_ds.to_csv(r"C:\Users\tvhat\OneDrive\Desktop\VS CODE\Python\Medical Insurance\medical_insurance_cleaned.csv", index=False)
+med_ds.to_csv(r"\Python\Medical Insurance\medical_insurance_cleaned.csv", index=False)
 
 
 #understanding the shape of the dataset by visualizations
@@ -120,7 +120,7 @@ y = med_ds['charges']
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.3, random_state = 42)
 
-med_ds.to_csv(r"C:\Users\tvhat\OneDrive\Desktop\VS CODE\Python\Medical Insurance\medical_insurance_cleaned.csv", index=False)
+med_ds.to_csv(r"\Python\Medical Insurance\medical_insurance_cleaned.csv", index=False)
 
 #Performing Kmeans clustering to make patient clusters
 cluster_features  = ['age', 'bmi', 'smoker']
