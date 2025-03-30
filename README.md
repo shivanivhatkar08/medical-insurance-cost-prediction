@@ -1,4 +1,10 @@
 Medical Insurance Cost Prediction and Fairness Analysis
+
+
+
+
+
+
 This project aims to predict individual medical insurance charges using machine learning, while ensuring fairness and transparency in the process. The project explores patterns in demographic and health-related factors (like age, BMI, smoking status) and uses clustering and explainability tools to gain actionable insights.
 
 - Project Goals
